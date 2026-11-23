@@ -1,5 +1,16 @@
 # All files live at the top level (no folders).
-# index.html is the website; submission-created.js and visit.mjs are the Telegram alert functions.
+# index.html is the website; submission-created.js, visit.mjs and stripe-webhook.mjs are the Telegram alert functions.
 [build]
   publish = "."
   functions = "."
+
+# Blog page (Holo posts load inside it)
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/blog.html"
+  status = 200
