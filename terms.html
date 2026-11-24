@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Inspection Terms of Service | OnSite 310S Inc.</title>
+<meta name="description" content="Terms of service for OnSite 310S Inc. mobile pre-purchase vehicle inspections: what the inspection covers, its limits, refunds, and liability.">
+<link rel="canonical" href="https://onsite310s.ca/terms">
+<meta name="robots" content="index,follow">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: workshop job-card — left-aligned editorial hero, a spec-sheet of what's checked, then booking. */
+:root{
+  --paper:#f3f5f6; --card:#ffffff; --ink:#14191d; --muted:#5a666e; --line:#d6dde1;
+  --signal:#e2a21b; --signal-ink:#1b1400; --steel:#26323a; --ok:#2f8a57; --warn:#c0661a; --bad:#b8322b;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1417; --card:#161d21; --ink:#e7ecee; --muted:#93a1a9; --line:#28333a;
+  --signal:#f0b232; --signal-ink:#1b1400; --steel:#0b0f11; --ok:#4fb67c; --warn:#e48a3c; --bad:#e2574f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1417; --card:#161d21; --ink:#e7ecee; --muted:#93a1a9; --line:#28333a;
+  --signal:#f0b232; --signal-ink:#1b1400; --steel:#0b0f11; --ok:#4fb67c; --warn:#e48a3c; --bad:#e2574f; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;text-wrap:balance;margin:0;letter-spacing:.005em}
+.label{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 19px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;padding:16px 24px;border-radius:4px;border:2px solid var(--ink);text-decoration:none;cursor:pointer;background:transparent;color:var(--ink)}
+.btn.primary{background:var(--signal);border-color:var(--signal);color:var(--signal-ink)}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+/* top bar */
+header.top{border-bottom:1px solid var(--line);background:var(--paper)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand b{font:800 26px/1 var(--display);letter-spacing:.02em}
+.brand span{font:500 12px/1 var(--mono);color:var(--muted);letter-spacing:.08em}
+.top nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.top nav a{font:600 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.top nav a.call{color:var(--ink);font-family:var(--mono);text-transform:none;letter-spacing:0}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:48px;padding-block:64px 56px;align-items:start}
+.hero h1{font-size:clamp(48px,7.4vw,92px);font-weight:800;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--signal)}
+.hero p.lede{font-size:20px;max-width:34em;color:var(--muted);margin:22px 0 30px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.creds{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
+.creds div{display:grid;gap:6px}
+.creds strong{font:700 20px/1 var(--display);letter-spacing:.02em}
+
+/* job ticket */
+.ticket{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 18px 40px -28px rgba(0,0,0,.45)}
+.ticket .head{background:var(--steel);color:#e9eef0;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.ticket .head .label{color:#aab7be}
+.ticket .price{padding:22px 20px 8px;display:flex;align-items:baseline;gap:10px}
+.ticket .price b{font:800 64px/1 var(--display)}
+.ticket .price span{font:500 14px/1.3 var(--mono);color:var(--muted)}
+.ticket ul{list-style:none;margin:0;padding:6px 20px 20px;display:grid;gap:0}
+.ticket li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.ticket li:last-child{border-bottom:0}
+.ticket li span:last-child{font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap}
+.ticket .foot{border-top:1px solid var(--line);padding:16px 20px;display:flex;justify-content:space-between;font:500 13px/1.3 var(--mono);color:var(--muted);gap:10px;flex-wrap:wrap}
+
+section{padding-block:72px;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:260px 1fr;gap:32px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(36px,4.6vw,56px);text-transform:uppercase;font-weight:800}
+.sec-head p{color:var(--muted);margin:0;max-width:40em}
+
+/* photo spec */
+.spec{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--card)}
+.spec div{padding:18px 14px;border-right:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.spec div:last-child{border-right:0}
+.spec b{font:800 44px/1 var(--display);font-variant-numeric:tabular-nums}
+.spec small{font-size:14px;color:var(--muted);line-height:1.35}
+.total-photos{display:flex;align-items:baseline;gap:10px;margin-top:14px;color:var(--muted);font:500 13px/1 var(--mono)}
+
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:28px}
+.checks article{background:var(--card);padding:24px 22px;display:grid;gap:10px;align-content:start}
+.checks h3{font-size:26px;font-weight:700;text-transform:uppercase}
+.checks p{margin:0;color:var(--muted);font-size:15.5px}
+.checks .unit{font:500 12px/1 var(--mono);color:var(--signal);letter-spacing:.06em}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;gap:10px;align-content:start;padding-top:18px;border-top:3px solid var(--ink)}
+.steps li::before{content:"Step " counter(s);font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps h3{font-size:26px;text-transform:uppercase}
+.steps p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* report preview */
+.report-demo{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.mini{background:#12181b;color:#dfe6e9;border-radius:6px;padding:22px;font-size:14px;display:grid;gap:16px;border:1px solid #233038}
+.mini .row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #26333a;padding-bottom:10px}
+.mini .k{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#8d9ca4}
+.mini .v{font:700 22px/1 var(--display)}
+.mini .issue{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:14px}
+.pill{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:3px;white-space:nowrap}
+.pill.bad{background:#5a1e1a;color:#ffb3ad}.pill.warn{background:#4d3112;color:#ffc78f}.pill.ok{background:#173d29;color:#9be3b8}
+.mini .verdict{background:#1c262b;border-left:4px solid #f0b232;padding:12px 14px;font-size:14px}
+.sample-tag{font:500 11px/1 var(--mono);color:#8d9ca4}
+.report-demo ul{margin:0;padding-left:20px;display:grid;gap:10px;color:var(--muted)}
+.report-demo ul b{color:var(--ink)}
+
+/* booking */
+.book{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:start}
+.book .side{display:grid;gap:22px}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px;display:grid;gap:14px}
+.contact-card .line{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.contact-card .num{font:500 22px/1 var(--mono)}
+.copy{font:500 12px/1 var(--mono);padding:8px 10px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:3px;cursor:pointer}
+form.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px;display:grid;gap:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:6px;font:600 14px/1.2 var(--body)}
+input,select,textarea{font:400 16px/1.4 var(--body);padding:12px 12px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);width:100%;min-width:0}
+textarea{min-height:84px;resize:vertical}
+.paybox{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
+.paybox .amt{font:500 14px/1.4 var(--mono);color:var(--muted)}
+.paybox .amt b{font:800 30px/1 var(--display);color:var(--ink);display:block}
+.paycard{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px;display:grid;gap:16px;align-content:start}
+.paycard h3{font-size:28px;text-transform:uppercase;margin:0}
+.paycard .lead2{margin:0;color:var(--muted)}
+.book-btn{background:var(--signal)!important;color:var(--signal-ink)!important;padding:9px 14px;border-radius:4px;font-family:var(--display)!important;text-transform:uppercase!important;letter-spacing:.06em!important;font-weight:700}
+.when{background:var(--steel);color:#e7ecee;border-radius:6px;padding:18px 20px;display:grid;gap:6px;border-left:6px solid var(--signal)}
+.when .label{color:#93a1a9}.when b{font:800 34px/1 var(--display);text-transform:uppercase;color:var(--signal)}.when span:last-child{font-size:15px;color:#c9d3d7}
+.need{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.need li{display:grid;gap:2px;padding:12px 14px;border:1px solid var(--line);border-left:4px solid var(--signal);border-radius:6px;background:var(--paper)}
+.need b{font-size:16px}.need span{font-size:14px;color:var(--muted)}
+.paycard .status a{color:var(--ink)}
+.agree{display:flex!important;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--muted);font-weight:400!important;line-height:1.45;cursor:pointer}
+.agree input{width:20px!important;height:20px;margin:1px 0 0;flex:none;accent-color:var(--signal)}
+.agree a{color:var(--ink)}
+.terms{max-width:62em}.terms ol{padding-left:22px;display:grid;gap:10px;color:var(--muted);margin:16px 0 0}.terms ol b{color:var(--ink)}
+.terms details{border:1px solid var(--line);border-radius:6px;padding:16px 20px;background:var(--card)}
+.terms summary{cursor:pointer;font:700 20px/1.2 var(--display);text-transform:uppercase}
+.status{font-size:14px;color:var(--muted);margin:0}
+.status.err{color:var(--bad)}
+
+/* faq */
+.faq{display:grid;gap:0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font:700 22px/1.2 var(--display);text-transform:uppercase;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";font-family:var(--mono);color:var(--muted)}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:12px 0 0;color:var(--muted);max-width:48em}
+
+footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .hero .wrap,.report-demo,.book,.sec-head{grid-template-columns:1fr}
+  .hero .wrap{padding-block:40px;gap:36px}
+  .spec{grid-template-columns:repeat(4,1fr)}
+  .spec div:nth-child(4){border-right:0}
+  .spec div:nth-child(-n+4){border-bottom:1px solid var(--line)}
+  .checks{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .spec{grid-template-columns:repeat(2,1fr)}
+  .spec div{border-right:0!important;border-bottom:1px solid var(--line)}
+  .spec div:nth-child(odd){border-right:1px solid var(--line)!important}
+  .checks,.steps,.grid2{grid-template-columns:1fr}
+  .top nav a:not(.call){display:none}
+  section{padding-block:52px}
+}
+
+/* ---- v2 additions ---- */
+.brand b small{font:600 14px/1 var(--display);letter-spacing:.08em;color:var(--muted);margin-left:4px}
+.ticket li span:first-child{min-width:0}
+.lead-in{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-bottom:36px}
+.lead-in p{margin:0 0 14px;color:var(--muted);font-size:18px;max-width:36em}
+.lead-in p strong{color:var(--ink)}
+.flags{display:grid;gap:12px}
+.flag{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--bad);border-radius:4px;padding:14px 16px;display:grid;gap:4px}
+.flag b{font:700 20px/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.flag span{color:var(--muted);font-size:15px}
+.checks.four{grid-template-columns:repeat(4,1fr)}
+
+.path{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--card)}
+.path li{padding:22px 20px;border-right:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.path li:last-child{border-right:0;background:var(--steel);color:#e9eef0}
+.path li:last-child p{color:#b9c6cc}
+.path li:last-child .label{color:var(--signal)}
+.path h3{font-size:26px;text-transform:uppercase}
+.path p{margin:0;color:var(--muted);font-size:15.5px}
+
+.scope{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.scope>div{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px;display:grid;gap:12px;align-content:start}
+.scope h3{font-size:24px;text-transform:uppercase}
+.scope ul{margin:0;padding-left:20px;display:grid;gap:8px;color:var(--muted)}
+.scope .note{border-top:1px solid var(--line);padding-top:12px;margin:0;font-size:15px;color:var(--muted)}
+
+/* sample report */
+.sample{background:#11171a;color:#dfe6e9;border:1px solid #233038;border-radius:8px;overflow:hidden;font-size:15px}
+.sample .sh{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 24px;border-bottom:2px solid #f0b232}
+.sample .sh b{font:800 26px/1 var(--display);letter-spacing:.02em}
+.sample .k{font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#8d9ca4}
+.sample .body{padding:22px 24px;display:grid;gap:26px}
+.sample h4{margin:0 0 10px;font:800 22px/1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:#e9eef0}
+.sample .veh{font:800 clamp(28px,4vw,40px)/1 var(--display);text-transform:uppercase;margin:6px 0}
+.sample .vl{display:flex;gap:16px;flex-wrap:wrap;font:500 13px/1.4 var(--mono);color:#8d9ca4}
+.sample .vl b{color:#dfe6e9;font-weight:500}
+.money{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#26333a;border:1px solid #26333a;border-radius:4px;overflow:hidden}
+.money div{background:#182126;padding:14px 16px;display:grid;gap:6px}
+.money .v{font:700 30px/1 var(--display);font-variant-numeric:tabular-nums}
+.money .v.acc{color:#f0b232}
+.verd{background:#1c262b;border-left:5px solid #e2574f;padding:14px 16px;display:grid;gap:6px}
+.verd b{font:800 22px/1 var(--display);text-transform:uppercase}
+.verd p{margin:0;color:#c7d1d6}
+.ftab{overflow-x:auto}
+.ftab table{width:100%;border-collapse:collapse;min-width:520px}
+.ftab th{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#8d9ca4;text-align:left;padding:8px;border-bottom:1px solid #2a363d}
+.ftab td{padding:11px 8px;border-bottom:1px solid #2a363d;vertical-align:top}
+.ftab td small{display:block;color:#8d9ca4;font-size:13px;margin-top:3px}
+.ftab .num{text-align:right;font-family:var(--mono);white-space:nowrap;font-variant-numeric:tabular-nums}
+.ftab tfoot td{border-bottom:0;font-weight:600}
+.sample .pill{color:#111}
+.sample .pill.bad{background:#e2574f;color:#111}.sample .pill.warn{background:#e48a3c;color:#111}.sample .pill.mon{background:#d8c14a;color:#111}.sample .pill.ok{background:#4fb67c;color:#111}
+.chart{background:#182126;border-radius:4px;padding:14px 12px 8px;overflow-x:auto}
+.chart svg{display:block;width:100%;max-width:860px;margin:0 auto;min-width:520px;height:auto}
+.chart-cap{font:500 12px/1.5 var(--mono);color:#8d9ca4;margin-top:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tires4{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tires4 div{background:#182126;border-radius:4px;padding:10px 12px;border-left:4px solid #4fb67c;display:grid;gap:4px}
+.tires4 div.r{border-left-color:#e2574f}.tires4 div.y{border-left-color:#d8c14a}
+.tires4 b{font:700 22px/1 var(--display)}
+.kv{display:grid;gap:8px}
+.kv div{display:flex;justify-content:space-between;gap:10px;background:#182126;border-radius:4px;padding:10px 12px;align-items:center}
+.kv b{font-family:var(--mono);font-weight:500;font-size:14px}
+.kv .bad{color:#ff8f88}.kv .ok{color:#8fe0b0}
+.nextl{margin:0;padding-left:22px;display:grid;gap:8px;color:#c7d1d6}
+.sample .tag{font:500 11px/1 var(--mono);letter-spacing:.08em;color:#f0b232;text-transform:uppercase}
+
+.tips{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.tips article{background:var(--card);padding:24px 22px;display:grid;gap:10px;align-content:start}
+.tips h3{font-size:24px;text-transform:uppercase}
+.tips p{margin:0;color:var(--muted);font-size:15.5px}
+.fine{font-size:13px;color:var(--muted);margin-top:14px}
+
+@media (max-width:900px){
+  .lead-in,.scope,.two{grid-template-columns:1fr}
+  .checks.four{grid-template-columns:1fr 1fr}
+  .path{grid-template-columns:1fr 1fr}
+  .path li:nth-child(2){border-right:0}
+  .path li:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .money{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .checks.four,.tips,.path{grid-template-columns:1fr}
+  .path li{border-right:0!important;border-bottom:1px solid var(--line)}
+  .sample .body,.sample .sh{padding-left:16px;padding-right:16px}
+}
+
+/* ---- contact v3 ---- */
+.wa-btn{background:#1f8f4e;color:#fff!important;padding:9px 14px;border-radius:4px;font-family:var(--display)!important;text-transform:uppercase!important;letter-spacing:.06em!important}
+.contact-card .pref{display:grid;gap:10px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.contact-card .pref .btn{justify-content:center}
+.contact-card .cline{display:grid;gap:8px}
+.contact-card .sub{font-size:13.5px;color:var(--muted)}
+.social{display:flex;gap:10px;flex-wrap:wrap}
+.social a{font:600 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:9px 12px;border:1px solid var(--line);border-radius:4px;color:var(--ink)}
+footer .social a{padding:6px 10px}
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;background:#1f8f4e;color:#fff;text-decoration:none;font:700 16px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:14px 18px;border-radius:999px;box-shadow:0 8px 24px -8px rgba(0,0,0,.5)}
+.finds{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.finds li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--bad);border-radius:4px;padding:16px;display:grid;gap:6px;align-content:start}
+.finds li b{font:700 20px/1.1 var(--display);text-transform:uppercase}
+.finds li .label{color:var(--muted)}
+.finds li p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:900px){.finds{grid-template-columns:1fr}}
+
+/* ---- report section v4 ---- */
+.inrep{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:40px}
+.inrep article{background:var(--card);padding:20px 18px;display:grid;gap:8px;align-content:start}
+.inrep h3{font-size:22px;text-transform:uppercase}
+.inrep p{margin:0;color:var(--muted);font-size:15px}
+.inrep .unit{font:500 12px/1 var(--mono);color:var(--signal);letter-spacing:.06em}
+.sample .sv{border-radius:6px;padding:14px 16px;background:#182126;border:1px solid #26333a;border-left:8px solid #e2574f}
+.sample .svl{font:800 32px/1 var(--display);text-transform:uppercase;color:#ff7a70;display:flex;align-items:center;gap:10px;margin:6px 0 8px}
+.sample .svl i{font-style:normal;width:34px;height:34px;border-radius:50%;background:#e2574f;color:#111;display:grid;place-items:center;font:800 18px/1 var(--body)}
+.sample .sv p{margin:0 0 6px;color:#c9d3d7}.sample .sv ul{margin:0;padding-left:18px}
+.sample .sub{margin:-4px 0 10px;color:#8d9ca4;font-size:14px}
+.sample .fcards{display:grid;gap:8px}
+.sample .fc{display:grid;grid-template-columns:44px 1fr;gap:12px;background:#182126;border-radius:6px;padding:12px 14px;border-left:5px solid;align-items:start}
+.sample .fc.fix{border-left-color:#f0a35c}.sample .fc.aware{border-left-color:#5aa3b8}.sample .fc.omv{border-left-color:#d8c14a}
+.sample .fi{width:44px;height:44px;border-radius:50%;display:grid;place-items:center}
+.sample .fc.fix .fi{background:rgba(240,163,92,.16);color:#f0a35c}.sample .fc.aware .fi{background:rgba(90,163,184,.16);color:#7cc2d6}.sample .fc.omv .fi{background:rgba(216,193,74,.15);color:#e5d36a}
+.sample .fh{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.sample .fh b{font:700 19px/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:#e9eef0}
+.sample .fs{font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:4px 6px;border-radius:3px;color:#111;white-space:nowrap}
+.sample .fc.fix .fs{background:#f0a35c}.sample .fc.aware .fs{background:#7cc2d6}.sample .fc.omv .fs{background:#e5d36a}
+.sample .fc p{margin:4px 0 0;color:#c9d3d7;font-size:14.5px}
+.sample .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.sample .chips:empty{display:none}
+.sample .chips span{font:500 11.5px/1 var(--mono);background:#1f2a30;border:1px solid #2a363d;border-radius:999px;padding:6px 10px;color:#dfe6e9}
+.sample .sflags{display:grid;gap:8px}
+.sample .sfl{display:grid;grid-template-columns:44px 1fr;gap:12px;background:#2a1a1a;border-radius:6px;padding:12px 14px;border-left:5px solid #e2574f;align-items:start}
+.sample .sfi{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(226,87,79,.18);color:#ff7a70}
+.sample .sfl .fs{background:#e2574f}
+.sample .sfl p{margin:4px 0 0;color:#c9d3d7;font-size:14.5px}
+.sample .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.sample .mt{display:flex;gap:10px;align-items:center;background:#182126;border-radius:5px;padding:10px 12px;border-left:4px solid}
+.sample .mt i{font-style:normal;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:800 14px/1 var(--body);flex:none}
+.sample .mt.meets{border-left-color:#4fb67c}.sample .mt.meets i{background:#4fb67c;color:#0f1417}
+.sample .mt.fails{border-left-color:#e2574f;background:#2a1a1a}.sample .mt.fails i{background:#e2574f;color:#fff}
+.sample .mt span{display:grid;gap:2px}.sample .mt b{font:700 16px/1.1 var(--display);text-transform:uppercase;color:#e9eef0}.sample .mt small{font:500 10.5px/1.2 var(--mono);color:#8d9ca4}
+.sample .pscale{margin:4px 0 0}.sample .pdots{position:relative;height:36px}
+.sample .pdots i{position:absolute;width:11px;height:11px;border-radius:50%;transform:translateX(-50%);box-shadow:0 0 0 2px #11171a}
+.sample .pbar{display:grid;grid-template-columns:repeat(6,1fr);height:10px;border-radius:5px;overflow:hidden}
+.sample .pnames{display:grid;grid-template-columns:repeat(6,1fr);text-align:center;margin-top:6px;font:500 10.5px/1.3 var(--mono);text-transform:uppercase;color:#8d9ca4}
+.sample .pnames em{display:block;font-style:normal;color:#dfe6e9}
+@media (max-width:700px){.sample .mgrid{grid-template-columns:1fr 1fr}.sample .pnames{font-size:8.5px}.sample .svl{font-size:26px}}
+.samph{font:800 28px/1 var(--display);text-transform:uppercase;margin:0 0 14px}
+.sample .glance{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#26333a;border:1px solid #26333a;border-radius:4px;overflow:hidden}
+.sample .glance div{background:#182126;padding:12px 14px;display:grid;gap:4px;border-top:3px solid #26333a}
+.sample .glance div.g{border-top-color:#4fb67c}.sample .glance div.y{border-top-color:#d8c14a}.sample .glance div.r{border-top-color:#e2574f}
+.sample .glance b{font-size:16px;font-weight:600;color:#e9eef0}
+.sample .glance small{font-size:13px;color:#8d9ca4}
+.sample .sumlist,.sample .aware,.sample .goodl{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.sample .sumlist li{padding-left:16px;position:relative;color:#c7d1d6}
+.sample .sumlist li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:#f0b232}
+.sample .sumlist b,.sample .aware b{color:#e9eef0}
+.sample .sub{margin:-4px 0 10px;color:#8d9ca4;font-size:14px}
+.sample ol.ask{margin:0;padding:0;list-style:none;counter-reset:n;display:grid;gap:8px}
+.sample ol.ask li{counter-increment:n;background:#182126;border-radius:4px;padding:12px 14px 12px 46px;position:relative;display:grid;gap:4px}
+.sample ol.ask li::before{content:counter(n);position:absolute;left:16px;top:10px;font:800 22px/1 var(--display);color:#f0b232}
+.sample ol.ask b{font:700 18px/1.1 var(--display);text-transform:uppercase;color:#e9eef0}
+.sample ol.ask span{color:#c7d1d6;font-size:14.5px}
+.sample .aware li{background:#182126;border-left:3px solid #e48a3c;border-radius:4px;padding:10px 12px;font-size:14.5px;color:#c7d1d6}
+.sample .goodl li{background:#182126;border-left:3px solid #4fb67c;border-radius:4px;padding:10px 12px 10px 32px;position:relative;font-size:14.5px;color:#c7d1d6}
+.sample .goodl li::before{content:"✓";position:absolute;left:12px;color:#4fb67c;font-weight:700}
+.samplecta{margin:22px 0 0}
+.bsteps{list-style:none;margin:0 0 4px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;counter-reset:b}
+.bsteps li{counter-increment:b;font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-top:3px solid var(--line);padding-top:8px}
+.bsteps li::before{content:counter(b) " · "}
+.bsteps li.on{color:var(--ink);border-top-color:var(--signal)}
+details.more{border:1px dashed var(--line);border-radius:4px;padding:10px 12px}
+details.more[open]{display:grid;gap:14px}
+details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--muted)}
+.alt{margin:0;font-size:14px;color:var(--muted)}
+.alt a{color:var(--ink);font-weight:600}
+@media (max-width:900px){.inrep{grid-template-columns:1fr 1fr}#book .side{order:2}#book form{order:1}}
+@media (max-width:560px){.inrep{grid-template-columns:1fr}.sample .glance{grid-template-columns:1fr 1fr}}
+</style>
+<style>
+.legal{max-width:46em;padding:56px 0 72px}
+.legal h1{font:800 clamp(40px,6vw,72px)/.95 var(--display);text-transform:uppercase;margin:6px 0 12px}
+.legal .upd{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.legal .lead{font-size:18px;color:var(--muted);margin:14px 0 26px}
+.legal h2{font:800 24px/1.1 var(--display);text-transform:uppercase;margin:34px 0 8px}
+.legal p,.legal li{line-height:1.65;color:var(--ink)}
+.legal ul{padding-left:22px;display:grid;gap:8px}
+.keypoints{border:1px solid var(--line);border-left:6px solid var(--signal);border-radius:6px;padding:20px 24px;background:var(--card)}
+.keypoints h2{margin-top:0}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><b>ONSITE 310S <small>INC.</small></b><span>MOBILE VEHICLE AUDITS · GTA</span></a>
+    <nav>
+      <a href="/#audit">The audit</a>
+      <a href="/#about">Background</a>
+      <a href="/#report">Sample report</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/blog">Blog</a>
+      <a class="call book-btn js-book" href="https://book.stripe.com/00waEZ5E0dkM7aIfOW9oc00" rel="noopener">Book now</a>
+      <a class="call wa-btn js-wa" href="https://wa.me/16475003107?text=Hi%20Nigel%2C%20I%20found%20a%20car%20I%20want%20inspected%3A%20" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <div class="wrap">
+    <article class="legal">
+      <span class="label">OnSite 310S Inc.</span>
+      <h1>Inspection Terms of Service</h1>
+      <p class="upd">Last updated November 24, 2026</p>
+<p class="lead">These terms apply to every pre-purchase vehicle inspection booked with OnSite 310S Inc. Please read them before you pay. When you book, you'll be asked to tick a box confirming that you agree to them.</p>
+
+<div class="keypoints">
+  <h2>The short version</h2>
+  <ul>
+    <li><b>Used cars carry risk.</b> An inspection lowers that risk. It cannot remove it.</li>
+    <li><b>Condition on the day only.</b> The report describes the vehicle as I found it at the time of the inspection.</li>
+    <li><b>Not a warranty or a guarantee.</b> It does not cover future breakdowns or repairs, and it is not a Safety Standards Certificate.</li>
+    <li><b>Thorough, but non-invasive.</b> Nothing is taken apart, so hidden or intermittent problems can be missed.</li>
+    <li><b>Final sale once the inspection is done.</b> Refunds are only given as set out in section 9.</li>
+    <li><b>My recommendation:</b> only buy a used vehicle with an Ontario Safety Standards Certificate and an extended warranty.</li>
+  </ul>
+</div>
+
+<h2>1. Who we are</h2>
+<p>OnSite 310S Inc. ("OnSite 310S", "we", "I") is a mobile pre-purchase vehicle inspection business based in Mississauga, Ontario, Canada. Inspections are performed by a Red Seal 310S Licensed Automotive Service Technician. "You" means the person who books and pays for the inspection.</p>
+
+<h2>2. What the service is</h2>
+<p>A pre-purchase inspection is a professional, visual and electronic assessment of a used vehicle's condition at a single point in time, carried out where the vehicle is parked. Depending on the vehicle and the access the seller allows, it may include:</p>
+<ul>
+  <li>a review of a vehicle history report (such as Carfax Canada) and paint thickness readings on the exterior panels, compared against that history;</li>
+  <li>a computer scan of the vehicle's electronic control modules;</li>
+  <li>a battery and charging system test;</li>
+  <li>tire tread depth and tire age (DOT date);</li>
+  <li>a visual check of the brakes, suspension, steering, underbody, engine bay, fluid leaks, interior, exterior, lamps and glass where visible;</li>
+  <li>a road test, where the seller permits and it is safe and legal to do so.</li>
+</ul>
+<p>You receive a written report with photos, my findings, and my professional opinion and recommendation. The report is based on what was observable, measurable and reported on the day of the inspection.</p>
+
+<h2>3. What the service is not</h2>
+<ul>
+  <li><b>Not a warranty, guarantee or insurance.</b> We do not promise that the vehicle will be free of defects, will remain reliable, or will not need repairs after the inspection. Any future failure, wear, breakdown or repair is not covered by OnSite 310S.</li>
+  <li><b>Not a Safety Standards Certificate (SSC).</b> Only a licensed Motor Vehicle Inspection Station in Ontario can issue one. Where the report lists findings that "could stop the vehicle from passing a safety", that is an opinion, not a pass or fail.</li>
+  <li><b>Not an emissions test, appraisal or valuation.</b> We do not tell you what the vehicle is worth or what price to pay.</li>
+  <li><b>Not legal, financial or insurance advice.</b> Information about Ontario dealer disclosure rules is general information only. For a dispute with a dealer, contact OMVIC or a lawyer.</li>
+  <li><b>Not a repair estimate.</b> We do not quote repair costs.</li>
+</ul>
+
+<h2>4. Limits of the inspection</h2>
+<ul>
+  <li><b>Non-invasive.</b> We do not remove panels, trim, wheels, covers or components, and we do not open the engine, transmission, differential or other sealed assemblies. We do not perform compression, leak-down or other internal engine tests unless agreed in writing.</li>
+  <li><b>Hidden and intermittent problems.</b> Some problems only appear after disassembly, after a certain distance or temperature, under certain weather, or from time to time. These may not be present or detectable during the inspection.</li>
+  <li><b>Fault codes</b> show what the vehicle's computers report at the time of the scan. Codes that were cleared recently, or problems that have not set a code, will not appear.</li>
+  <li><b>Conditions on the day</b> (weather, lighting, a cold or warm engine, a dirty vehicle, limited space, or a seller who restricts access or the road test) can limit what can be checked. We note significant limitations in the report.</li>
+  <li><b>Our equipment</b> is professional-grade and checked and calibrated daily for accurate readings. Measurements are still indications, not exact proof of a cause. For example, a paint thickness reading shows extra paint or filler on a panel, but not always why or how well a repair was done.</li>
+  <li><b>Third-party information.</b> Vehicle history reports and other third-party data are provided as received. They can be incomplete or wrong, and damage that was never reported will not appear on them. We are not responsible for errors in third-party information.</li>
+</ul>
+
+<h2>5. Used vehicles carry risk</h2>
+<p>Every used vehicle has wear, an unknown history and some risk of future failure. Our job is to reduce that risk with experience, professional knowledge and calibrated tools, and to point out what we find. We cannot remove the risk. Every used vehicle needs regular maintenance and will need repairs over time. You are responsible for budgeting for maintenance, repairs, insurance and the other costs of owning the vehicle.</p>
+
+<h2>6. Our recommendation</h2>
+<p>We only recommend buying a used vehicle that comes with an Ontario Safety Standards Certificate and is covered by an extended warranty from a reputable provider. We do not recommend buying vehicles sold "as-is". A vehicle we mark as "Recommended" or "Recommended if fixed" is recommended on those conditions only. Our recommendation is a professional opinion based on what we found on the day. It does not replace your own judgement.</p>
+
+<h2>7. Your decision</h2>
+<p>The decision to buy the vehicle, the price you agree to, any repairs you or the seller arrange, and the terms of your contract with the seller are yours alone. OnSite 310S is not a party to any sale and does not negotiate on your behalf.</p>
+
+<h2>8. Booking, access and timing</h2>
+<ul>
+  <li>The price is $150 CAD plus 13% HST, paid in full when you book.</li>
+  <li>You are responsible for giving us correct vehicle, location and seller details and for confirming that the seller allows the inspection.</li>
+  <li>We aim to inspect the same day or the next day, after 2:30 PM, depending on our schedule and the vehicle's location. Times are confirmed by WhatsApp, phone or email and are not guaranteed.</li>
+  <li>You do not need to be present.</li>
+  <li>We may decline or stop an inspection if the location or vehicle is unsafe.</li>
+</ul>
+
+<h2>9. Cancellations and refunds</h2>
+<ul>
+  <li><b>Once the inspection has been performed, the fee is final and non-refundable,</b> whatever the findings or the recommendation, and whether or not you buy the vehicle.</li>
+  <li><b>If you cancel before we travel to the vehicle,</b> we will refund the fee in full, or apply it to another vehicle within 30 days.</li>
+  <li><b>If the vehicle is sold, unavailable, or the seller refuses access</b> when we arrive, we will apply the fee to another vehicle within 30 days. One reschedule is included; after that the fee is non-refundable.</li>
+  <li><b>If we cannot perform the inspection for a reason within our control,</b> we will reschedule or refund the fee in full.</li>
+</ul>
+
+<h2>10. Limitation of liability</h2>
+<p>To the fullest extent permitted by law, OnSite 310S Inc.'s total liability arising out of or relating to the inspection or report, under any legal theory, is limited to the fee you paid for that inspection. We are not liable for indirect, incidental or consequential losses, including repair costs, loss of use, loss of value, towing, rental, travel, or the price paid for the vehicle, for defects that were not reasonably detectable during a non-invasive inspection, or for conditions that arise after the inspection.</p>
+
+<h2>11. Your consumer rights</h2>
+<p>Nothing in these terms limits any right you have under the Ontario Consumer Protection Act, 2002 or other consumer protection law that cannot be waived. If any part of these terms is found unenforceable, the rest still applies.</p>
+
+<h2>12. The report</h2>
+<ul>
+  <li>The report is prepared for the person who booked the inspection, for the vehicle inspected, on the date shown. Other people, including later buyers, should not rely on it.</li>
+  <li>Web links to reports can be opened by anyone who has the link. Share it only with people you trust. Web versions do not show the customer's name.</li>
+  <li>We keep a copy of the report and the inspection data for our records.</li>
+</ul>
+
+<h2>13. Photos and video</h2>
+<p>We may photograph and record video of the vehicle during the inspection, for your report, our records and our marketing. Anything we publish will not include your name, and licence plates and VINs will be hidden. If you do not want your vehicle used in our marketing, tell us before or after the inspection and we will not use it.</p>
+
+<h2>14. Questions and complaints</h2>
+<p>If you have a concern about an inspection, contact us first and we will work with you to resolve it: WhatsApp or call (647) 500-3107, or email onsite310s@gmail.com. Please contact us within 30 days of the inspection.</p>
+
+<h2>15. Governing law and service area</h2>
+<p>We provide services in the Greater Toronto Area, Ontario, Canada, and prices are in Canadian dollars. These terms are governed by the laws of the Province of Ontario and the federal laws of Canada that apply there, wherever you live or book from.</p>
+
+<h2>16. Changes to these terms</h2>
+<p>We may update these terms from time to time. The terms that apply to your inspection are the ones posted when you booked.</p>
+
+    </article>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>OnSite 310S Inc. · Mobile pre-purchase vehicle audits · Mississauga and the GTA</span>
+    <span class="social js-social-wrap"><a class="js-ig" href="https://www.instagram.com/onsite310s/" target="_blank" rel="noopener">Instagram</a><a class="js-fb" href="https://www.facebook.com/profile.php?id=61587348095760" target="_blank" rel="noopener">Facebook</a><a class="js-tt" href="https://www.tiktok.com/@onsite310s0" target="_blank" rel="noopener">TikTok</a></span>
+    <span>Red Seal 310S Licensed Automotive Technician · <a href="/terms">Inspection terms</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -143,7 +143,11 @@ textarea{min-height:84px;resize:vertical}
 .agree{display:flex!important;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--muted);font-weight:400!important;line-height:1.45;cursor:pointer}
 .agree input{width:20px!important;height:20px;margin:1px 0 0;flex:none;accent-color:var(--signal)}
 .agree a{color:var(--ink)}
-.terms{max-width:62em}.terms ol{padding-left:22px;display:grid;gap:10px;color:var(--muted);margin:16px 0 0}.terms ol b{color:var(--ink)}
+.terms{}.terms ol{padding-left:22px;display:grid;gap:10px;color:var(--muted);margin:16px 0 0}.terms ol b{color:var(--ink)}
+.keypts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.keypts>div{align-content:start;border:1px solid var(--line);border-top:4px solid var(--signal);border-radius:6px;padding:16px 18px;background:var(--card);display:grid;gap:6px}
+.keypts b{font:800 19px/1.1 var(--display);text-transform:uppercase}.keypts span{color:var(--muted);font-size:15px;line-height:1.5}
+@media (max-width:800px){.keypts{grid-template-columns:1fr}}
 .terms details{border:1px solid var(--line);border-radius:6px;padding:16px 20px;background:var(--card)}
 .terms summary{cursor:pointer;font:700 20px/1.2 var(--display);text-transform:uppercase}
 .status{font-size:14px;color:var(--muted);margin:0}
@@ -378,7 +382,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
       <div>
         <p class="label">OnSite 310S Inc. · Mississauga · North York · All of the GTA</p>
         <h1 style="margin-top:14px">Know the car <em>before</em> you sign.</h1>
-        <p class="lede">A dealer-level inspection, brought to the car. I check the history against the paint on every panel, scan every computer, test the battery and look for red flags that could stop the car from passing a safety. Same day, you get a report that tells you whether I recommend the car and what to bring up with the dealer.</p>
+        <p class="lede">A dealer-level inspection, brought to the car. I check the history against the paint on every panel, scan the car's computer modules, test the battery and look for red flags that could stop the car from passing a safety. Same day, you get a report that tells you whether I recommend the car and what to bring up with the dealer.</p>
         <div class="ctas">
           <a class="btn primary js-book" href="https://book.stripe.com/00waEZ5E0dkM7aIfOW9oc00" rel="noopener">Book now · $150 + HST</a>
           <a class="btn" href="#report">See a sample report</a>
@@ -396,7 +400,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
         <ul>
           <li><span>Carfax history matched to every panel</span><span>Carfax</span></li>
           <li><span>Paint thickness on every panel</span><span>µm</span></li>
-          <li><span>Full system scan, every module</span><span>scan</span></li>
+          <li><span>Full system scan</span><span>scan</span></li>
           <li><span>Battery health and charging test</span><span>SOH</span></li>
           <li><span>Safety red flags, by MTO category</span><span>MTO</span></li>
           <li><span>Tire tread and DOT age</span><span>mm / yrs</span></li>
@@ -428,8 +432,8 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
       </div>
 
       <div class="checks four">
-        <article><span class="unit">History</span><h3>History vs. paint</h3><p>I pull the Carfax, then measure the paint on every panel with a digital gauge. Each reading is matched to the accident history. Body filler or a repaint with no claim on file is damage that was never reported.</p></article>
-        <article><span class="unit">Scan</span><h3>Full system scan</h3><p>A full system scan reads every computer in the car, not only the engine. Active and permanent faults are flagged. Old, stored codes are listed separately so they don't scare you for nothing.</p></article>
+        <article><span class="unit">History</span><h3>History vs. paint</h3><p>I pull the Carfax, then measure the paint on every panel with a digital gauge. Each reading is matched to the accident history. Body filler or a repaint with no claim on file points to damage that was never reported.</p></article>
+        <article><span class="unit">Scan</span><h3>Full system scan</h3><p>A full system scan reads the car's computer modules, not only the engine. Active and permanent faults are flagged. Old, stored codes are listed separately so they don't scare you for nothing.</p></article>
         <article><span class="unit">Battery</span><h3>Battery and charging</h3><p>A digital battery tester measures the battery's health, its charge and its cranking power, plus the starter and alternator. A healthy battery that's just flat passes; a worn-out one fails.</p></article>
         <article><span class="unit">MTO</span><h3>Safety red flags</h3><p>Grooved rotors, a seeping ball joint, an oil leak, a cracked windshield, bald tires: anything I see that could stop the car from passing a safety is flagged under its MTO category, so you know to get it certified before you buy.</p></article>
       </div>
@@ -477,7 +481,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
             <li>Intermittent problems may not show up during one visit.</li>
             <li>It isn't a Safety Standards Certificate. Only a licensed inspection station can issue one.</li>
           </ul>
-          <p class="note"><b>My rule:</b> only buy a used car with a Safety Standards Certificate and an extended warranty. I don't recommend as-is cars. The audit is there to catch what a safety and a warranty won't: unreported damage, a misrepresented history, and problems the seller didn't mention.</p>
+          <p class="note"><b>My rule:</b> only buy a used car with a Safety Standards Certificate and an extended warranty. I don't recommend as-is cars. The audit looks for what a safety and a warranty don't cover: unreported damage, a misrepresented history, and problems the seller didn't mention.</p>
         </div>
       </div>
     </div>
@@ -643,7 +647,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
       </div>
 
       <div class="card paycard" id="bookCard">
-        <div class="when"><span class="label">Inspection timing</span><b>Same day or next day</b><span>Inspections run after 2:30 PM. Depending on my schedule and where the car is, I'll inspect it the same day you book or the next day, and confirm the exact time with you and the seller on WhatsApp.</span></div>
+        <div class="when"><span class="label">Inspection timing</span><b>Same day or next day</b><span>Inspections run after 2:30 PM. Depending on my schedule and where the car is, I aim to inspect it the same day you book or the next day, and confirm the exact time with you and the seller on WhatsApp.</span></div>
         <ul class="need">
           <li><b>1 · Tap Book now</b><span>Secure checkout by Stripe</span></li>
           <li><b>2 · Tell me about the car</b><span>The listing or year, make and model, where the car is, and the salesperson's name and number</span></li>
@@ -653,7 +657,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
           <div class="amt"><b>$169.50</b>$150 + 13% HST</div>
           <a class="btn primary js-book" id="payBtn" href="https://book.stripe.com/00waEZ5E0dkM7aIfOW9oc00" rel="noopener">Book now</a>
         </div>
-        <p class="status">By booking, you agree to the <a href="#terms">inspection terms</a>. You don't need to be at the car, and your report comes the same day as the inspection.</p>
+        <p class="status"><b>Before you book:</b> an inspection reports the vehicle's condition on the day. It is not a warranty against future repairs, and the fee is final once the inspection is done. At checkout you'll tick a box to agree to the <a href="/terms">Terms of Service</a>. You don't need to be at the car, and your report comes the same day as the inspection.</p>
         <p class="alt">Questions first? <a class="js-wa" href="https://wa.me/16475003107?text=Hi%20Nigel%2C%20I%20found%20a%20car%20I%20want%20inspected%3A%20" target="_blank" rel="noopener">Message me on WhatsApp</a>.</p>
       </div>
     </div>
@@ -666,7 +670,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
         <details><summary>How soon can you inspect?</summary><p>Same day or next day. I inspect after 2:30 PM, and I fit each car in based on my schedule and where it is. There are no time slots to pick: after you book, I confirm the exact time with you and the seller on WhatsApp.</p></details>
         <details><summary>Do I need to be there?</summary><p>No. I travel to wherever the car is in the GTA, whether that's a dealership lot or a private seller's driveway. Your report is sent online, so you can be at work while I inspect.</p></details>
         <details><summary>How fast do I get the report?</summary><p>The same day, as a link you open on your phone plus a PDF. It includes my recommendation, the topics to bring up, the Ontario safety check, the Carfax matched to the paint readings, the system scan and battery test, tire readings and photos.</p></details>
-        <details><summary>What equipment do you use?</summary><p>Professional diagnostic equipment: a full system scan tool that reads every computer in the car, a digital battery and charging system tester, a paint thickness gauge for every panel, and the Carfax Canada history report. I check every tool for accuracy, and the original printouts are attached to your report.</p></details>
+        <details><summary>What equipment do you use?</summary><p>Professional diagnostic equipment: a full system scan tool that reads the car's computer modules, a digital battery and charging system tester, a paint thickness gauge for every panel, and the Carfax Canada history report. My equipment is professional-grade and checked and calibrated daily for accurate readings, and the original printouts are attached to your report.</p></details>
         <details><summary>What does the report look like?</summary><p>A page you open on your phone and scroll through, with a swipeable photo gallery, plus a PDF to keep or forward. See the sample report above for the layout.</p></details>
         <details><summary>Will you tell me how much to offer?</summary><p>No. The report lists the topics to bring up: the findings that matter, like a failed battery, tires under the legal minimum or an active fault. How they're handled is between you and the dealer. A repair done before you buy is usually worth more than a discount.</p></details>
         <details><summary>Do you inspect cars sold as-is?</summary><p>I don't recommend them. An as-is car hasn't passed a safety inspection and may not be fit to drive. My recommendation is always to buy with a Safety Standards Certificate and an extended warranty, and every report says so.</p></details>
@@ -684,21 +688,16 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
   </section>
   <section id="terms">
     <div class="wrap terms">
-      <div class="sec-head"><h2>Inspection terms</h2><p>Please read these before you book. You'll be asked to agree to them when you pay.</p></div>
-      <details open><summary>Terms of the pre-purchase inspection</summary>
-      <ol>
-        <li><b>Purpose.</b> The inspection helps you avoid scam cars, misrepresented history and unreported damage, and shows you the issues to raise before you buy. It is not a promise that nothing will go wrong with the vehicle.</li>
-        <li><b>Our recommendation.</b> We recommend buying a used vehicle only with a Safety Standards Certificate and an extended warranty from a reputable provider. We do not recommend vehicles sold as-is.</li>
-        <li><b>A snapshot in time.</b> The report describes the vehicle as observed on the inspection date. Its condition can change afterwards.</li>
-        <li><b>Non-invasive.</b> We do not remove parts, panels, wheels or interior trim, or open the engine or transmission. Hidden, internal or intermittent problems may not be found.</li>
-        <li><b>Not a guarantee.</b> The inspection and report are not a warranty, a Safety Standards Certificate, an appraisal or a guarantee of future reliability or value.</li>
-        <li><b>Third-party information.</b> Vehicle history reports and test equipment readings come from third parties. Damage that was never reported will not appear on a history report.</li>
-        <li><b>Your decision and costs.</b> The decision to buy, the price you agree to, and all costs of owning the vehicle, including maintenance, repairs and insurance, are your responsibility. Every used vehicle needs maintenance and will need repairs over time.</li>
-        <li><b>Access.</b> The inspection depends on the seller allowing access and a test drive. If the seller refuses or the vehicle isn't available at the agreed time, we will work with you to reschedule.</li>
-        <li><b>Who can rely on the report.</b> The report is for the client who booked, for the vehicle inspected. Others should not rely on it.</li>
-        <li><b>Limit of liability.</b> To the extent permitted by law, OnSite 310S Inc.'s total liability for the inspection and report is limited to the fee paid.</li>
-      </ol>
-      </details>
+      <div class="sec-head"><h2>The terms</h2><p>Please read these before you book. You'll be asked to agree to them at checkout.</p></div>
+      <div class="keypts">
+        <div><b>Used cars carry risk</b><span>An inspection lowers that risk with experience and calibrated professional tools. It cannot remove it.</span></div>
+        <div><b>Condition on the day</b><span>The report describes the vehicle as found at the time of the inspection only.</span></div>
+        <div><b>Not a warranty</b><span>It doesn't cover future breakdowns or repairs, and it isn't a Safety Standards Certificate.</span></div>
+        <div><b>Thorough, non-invasive</b><span>Nothing is taken apart, so hidden or intermittent problems can be missed.</span></div>
+        <div><b>Final sale once inspected</b><span>Cancel before I travel to the car for a full refund. After the inspection, the fee is non-refundable.</span></div>
+        <div><b>Safety + extended warranty</b><span>I only recommend buying a used vehicle with an Ontario safety certificate and an extended warranty.</span></div>
+      </div>
+      <p style="margin-top:18px"><a class="btn" href="/terms">Read the full Terms of Service</a></p>
     </div>
   </section>
 </main>
@@ -707,7 +706,7 @@ details.more summary{cursor:pointer;font:600 14px/1.2 var(--body);color:var(--mu
   <div class="wrap">
     <span>OnSite 310S Inc. · Mobile pre-purchase vehicle audits · Mississauga and the GTA</span>
     <span class="social js-social-wrap"><a class="js-ig" href="https://www.instagram.com/onsite310s/" target="_blank" rel="noopener">Instagram</a><a class="js-fb" href="https://www.facebook.com/profile.php?id=61587348095760" target="_blank" rel="noopener">Facebook</a><a class="js-tt" href="https://www.tiktok.com/@onsite310s0" target="_blank" rel="noopener">TikTok</a></span>
-    <span>Red Seal 310S Licensed Automotive Technician · <a href="/blog">Blog</a> · <a href="#terms">Inspection terms</a></span>
+    <span>Red Seal 310S Licensed Automotive Technician · <a href="/blog">Blog</a> · <a href="/terms">Terms of Service</a></span>
   </div>
 </footer>
 <a class="wa-float js-wa" href="https://wa.me/16475003107?text=Hi%20Nigel%2C%20I%20found%20a%20car%20I%20want%20inspected%3A%20" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
